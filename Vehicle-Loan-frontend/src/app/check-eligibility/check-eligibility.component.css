@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sanswght@600&display=swap');
+
+
+.navpanel{
+  overflow: hidden;
+  background-color: #0c86bf;
+  width: 100%;
+  margin-left: auto;
+  height: 70px;
+}
+
+.navpanel a{
+float: right;
+color: white;
+display: block;
+font-family: Verdana, sans-serif;
+text-align: center;
+padding: 26px 26px;
+text-decoration: none;
+}
+
+.navpanel a:hover {
+background-color:#0c86bf ;
+
+}
+
+
+.container {
+    position: relative;
+    background-color: #f2f2f2;
+    padding: 20px 0 30px 0;
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 150px;
+  } 
+  .row {
+    flex: 100%;
+    padding: 0 60px;
+    margin-top: 6px;
+    text-align: left;
+  }
+  .text {
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    color: #0c86bf;
+  }
+  input,
+  .btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    margin: 5px 0;
+    border-radius: 5px;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 15px;
+    text-align: left;
+    line-height: 20px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    text-decoration: none; /* remove underline from anchors */
+  }
+
+  .login {
+    width: 50%;
+    padding: 20px;
+    border: none;
+    margin: auto;
+    border-radius: 5px;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    background-color: #0c86bf;
+    text-align: center;
+    line-height: 20px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    text-decoration: none; 
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+  .login:hover {
+    background-color: #0c86bf;
+  }
+  .footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: small;
+    background-color: #0c86bf;
+    font-family: Verdana, sans-serif;
+    opacity: 80%;
+    color: rgb(226, 225, 225);
+    text-align: center;
+ }

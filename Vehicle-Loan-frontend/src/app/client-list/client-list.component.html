@@ -1,0 +1,47 @@
+<div class = "navpanel sticky" >
+    <a routerLink='/login' class='aboutus'>Log Out</a>
+    <a routerLink='/admindashboard'>Admin Dashboard</a>
+    <a routerLink='/allrejected' >Rejected List</a>
+    <a routerLink='/allapplications'>Applications list</a>
+    <a routerLink='/allclients'>Registered Clients</a>
+    <img style = "height: 65px; margin:2px 30px; vertical-align: middle;" src = "assets/images/car-loan.png">
+</div>
+
+<!-- code for displaying information of all the clients that have been registered -->
+
+<h1>-------All Registered Clients--------</h1>
+<br>
+<br />
+ 
+  <table class='table  table-bordered table-hover'>  
+      <thead class="thead-dark">  
+          <tr>  
+              <th scope="col">ID</th>  
+              <th scope="col">First Name</th>  
+              <th scope="col">Last Name</th>  
+              <th scope="col">Email</th>  
+              <th scope="col">Phone Number</th>  
+              <th scope="col">Gender</th> 
+              <th scope="col">Address</th> 
+              <th scope="col">City</th> 
+              <th scope="col">State</th> 
+              <th scope="col">Pincode</th>
+          </tr>  
+      </thead>  
+      <tbody>  
+          <tr *ngFor="let user of users">   
+              <td>{{user.user_id}}</td>
+              <td>{{user.user_firstname}}</td>
+              <td>{{user.user_lastname}}</td>
+              <td>{{user.user_email}}</td>
+              <td>{{user.user_phonenum}}</td>
+              <td>{{user.user_gender}}</td>
+              <td>{{user.user_address}}</td>
+              <td>{{user.user_city}}</td>
+              <td>{{user.user_state}}</td>
+              <td>{{user.user_pincode}}</td>
+              <!-- K<td>{{user.user_password}}</td> -->        
+          </tr>  
+      </tbody>  
+  </table> 
+  

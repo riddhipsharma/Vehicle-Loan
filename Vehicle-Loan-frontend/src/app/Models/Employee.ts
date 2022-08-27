@@ -1,0 +1,19 @@
+export interface Employee{
+    user_ref_id:number,
+    vehicle_make:string,
+    vehicle_model:string,
+    vehicle_type:string,
+    showroom_price:number,
+    on_road_price:number,
+    type_of_emp:string,
+    annual_sal:number,
+    existing_emi:string,  
+    amount:number,
+    duration:number,
+    interest:number,
+    application_date:Date,
+    upload_aadhar:string,
+    upload_pan:string,
+    upload_photo:string,
+    upload_salary_slip:string
+}

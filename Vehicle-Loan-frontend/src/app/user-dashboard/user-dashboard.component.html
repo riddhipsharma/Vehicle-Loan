@@ -1,0 +1,26 @@
+<div class = "navpanel sticky" >
+  <a routerLink='/login' class='aboutus'>Log Out</a>
+  <a routerLink='/checkeligiblity' class='checkeligibility'>Apply Loan</a>
+  <a routerLink='/emicalculator' class='EMIcalculator'>EMI Calculator</a>
+  <a routerLink='/userdashboard' class='home'>Home</a>
+  <!-- <a routerLink='/myformstatus'></a> -->
+  <img style = "height: 65px; margin:2px 30px; vertical-align: middle;" src = "assets/images/car-loan.png">
+</div>
+
+<div class = "container">
+  <div style="margin-top: 100px; margin-bottom: 10px; color: #365040;"> 
+      Hello <u><b>{{users.user_firstname}} {{users.user_lastname}}</b></u>!<br><br>
+      <b>Your User ID is : </b><p>{{users.user_id}}</p><br>
+      <b>Your Email is: </b><p>{{users.user_email}}</p><br>
+      <b>Your Phone Number is: </b><p>{{users.user_phonenum}}</p><br>
+      <b>Your Date Of Birth is: </b><p>{{users.user_dob}}</p><br>
+      <b>Your Gender is:</b><p>{{users.user_gender}}</p><br>
+      <b>Your Address is:</b><p>{{users.user_address}}</p><br>
+      <b>Your City is:</b><p>{{users.user_city}}</p><br>
+      <b>Your State is:</b><p>{{users.user_state}}</p><br>
+      <b>Youe Pincode is:</b><p>{{users.user_pincode}}</p><br>
+      <b>Your Password is:</b><p>{{users.user_password}}</p><br><br>
+      <a routerLink="/myformstatus/{{users.user_id}}" class="btn btn-warning" >Details</a>
+  </div>
+</div>
+

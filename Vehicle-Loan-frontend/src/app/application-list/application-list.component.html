@@ -1,0 +1,48 @@
+<div class = "navpanel sticky" >
+    <a routerLink='/login' class='aboutus'>Log Out</a>
+    <a routerLink='/admindashboard'>Admin Dashboard</a>
+    <a routerLink='/allrejected' >Rejected List</a>
+    <a routerLink='/allapplications'>Applications list</a>
+    <a routerLink='/allclients'>Registered Clients</a>
+    <img style = "height: 65px; margin:2px 30px; vertical-align: middle;" src = "assets/images/car-loan.png">
+</div>
+<br>
+<br>
+<br>
+<br>
+
+<!-- code for displaying information of all the user application form -->
+<div class="container">
+    <div class="row">
+
+        <h1>-------All Application Forms--------</h1>
+        <br>
+        <br />
+        <br><br>
+        <a routerLink="/addappstatus" class="btn btn-warning" >ADD STATUS</a>
+        <table class='table  table-bordered table-hover'>  
+      <thead class="thead-dark">  
+          <tr>  
+              <!-- <th scope="col">Status ID</th>   -->
+              <th scope="col">Customer ID</th>  
+              <th scope="col">Application ID</th>  
+              <th scope="col">Verify Status</th>  
+              <th scope="col">Form Details</th> 
+          </tr>  
+        </thead>  
+        <tbody>  
+          <tr *ngFor="let r of nas">   
+              <!-- <td>{{r.status_id}}</td> -->
+              <td>{{r.user_id}}</td>
+              <td>{{r.application_id}}</td>
+              <!-- <td>{{r.admin_ref_id}}</td> -->
+              <!-- <td>{{r.application_status}}</td>
+              <td>{{r.rejection_reason}}</td>  -->
+              <td><a routerLink="/editformstatus/{{r.user_id}}" class="btn btn-warning" >Verify</a></td>
+              <td><a routerLink="/custappform/{{r.application_id}}" class="btn btn-warning" >Details</a></td>       
+          </tr>  
+        </tbody>  
+    </table> 
+    
+</div>
+</div>

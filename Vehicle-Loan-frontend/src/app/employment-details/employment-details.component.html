@@ -1,0 +1,131 @@
+<div class = "navpanel sticky" >
+  <a routerLink='/login' class='aboutus'>Log Out</a>
+  <a routerLink='/checkeligiblity' class='checkeligibility'>Apply Loan</a>
+  <a routerLink='/emicalculator' class='EMIcalculator'>EMI Calculator</a>
+  <a routerLink='/userdashboard' class='home'>Home</a>
+  <img style = "height: 65px; margin:2px 30px; vertical-align: middle;" src = "assets/images/car-loan.png">
+</div>
+
+
+<!-- HTML code for application form to be filled by user -->
+
+<div class="container">
+    <div class="row">
+        <br><br>
+        <h1 class = "heading" style = "font-size: 25px;">Application Form</h1>
+        <hr style = "width:100%">
+            <form #appform="ngForm" novalidate (ngSubmit)="onSubmit(appform.value)">
+
+                <div class="form-group">
+                    <pre></pre>
+                    <input #user_ref_id="ngModel" type="number" name="user_ref_id" class="form-control"
+                      placeholder="User Reference Id" ngModel>
+                  </div>
+
+                <div class="form-group">
+                    <pre></pre>
+                    <input #vehicle_make="ngModel" type="text" name="vehicle_make" class="form-control"
+                      placeholder="Vehicle Make" ngModel>
+                  </div>
+
+                  <div class="form-group">
+                    <pre></pre>
+                    <input #vehicle_model="ngModel" type="text" name="vehicle_model" class="form-control"
+                      placeholder="Vehicle Model" ngModel>
+                  </div>
+
+                  <div class="form-group">
+                    <pre></pre>
+                    <input #vehicle_type="ngModel" type="text" name="vehicle_type" class="form-control"
+                      placeholder="Type of Vehicle" ngModel>
+                  </div>
+
+                  <div class="form-group">
+                    <pre></pre>
+                    <input #showroom_price="ngModel" type="number" name="showroom_price" class="form-control"
+                      placeholder="Showroom Price" ngModel>
+                  </div>
+
+                  <div class="form-group">
+                    <pre></pre>
+                    <input #on_road_price="ngModel" type="number" name="on_road_price" class="form-control"
+                      placeholder="On Road Price" ngModel>
+                  </div>
+
+                  <div class="form-group">
+                    <pre></pre>
+                    <input #type_of_emp="ngModel" required type="text" name="type_of_emp" class="form-control" placeholder="Type of Employment" ngModel>
+                  </div>
+
+                  <div class="form-group">
+                    <pre></pre>
+                    <input #annual_sal="ngModel" type="number" name="annual_sal" class="form-control"
+                      placeholder="Annual Salary" ngModel>
+                  </div>
+
+                  <div class="form-group">
+                    <pre></pre>
+                      <input #existing_emi="ngModel" type="text" name="existing_emi"
+                        class="form-control" placeholder="Existing Emi" ngModel>
+                  </div>
+
+                  <div class="form-group">
+                    <pre></pre>
+                    <input #amount="ngModel" type="number" name="amount" class="form-control"
+                      placeholder="Loan Amount" ngModel>
+                  </div>
+
+                  <div class="form-group">
+                    <pre></pre>
+                    <input #duration="ngModel" type="number" name="duration" class="form-control"
+                      placeholder="Loan Tenure" ngModel>
+                  </div>
+
+                  <div class="form-group">
+                    <pre></pre>
+                    <input #interest="ngModel" type="number" name="interest" class="form-control"
+                      placeholder="Rate of Interest" ngModel>
+                  </div>
+
+                  <div class="form-group">
+                    <pre></pre>
+                    <input #application_date="ngModel" type="date" name="application_date" class="form-control" ngModel>
+                  </div>
+                  
+                  <div class="form-group">
+                    <pre></pre>
+                    <input placeholder="Upload Aadhar Card" #application_date="ngModel" type="boolean" name="upload_aadhar" class="form-control" ngModel>
+                  </div>
+
+                  <div class="form-group">
+                    <pre></pre>
+                    <input placeholder="Upload PAN Card" #application_date="ngModel" type="boolean" name="upload_pan" class="form-control" ngModel>
+                  </div>
+
+                  <div class="form-group">
+                    <pre></pre>
+                    <input placeholder="Upload Your Passport Size Photo" #application_date="ngModel" type="boolean" name="upload_photo" class="form-control" ngModel>
+                  </div>
+
+                  <div class="form-group">
+                    <pre></pre>
+                    <input placeholder="Upload PDF Of Your Salary Slip" #application_date="ngModel" type="boolean" name="upload_salary_slip" class="form-control" ngModel>
+                  </div>
+                  <!-- <p class="text">Aadhar Card</p>
+                  <pre></pre>
+                  <button type="submit" class="button" >Upload</button>
+                
+                <p class="text">Pan Card</p>
+                <button type="submit" class="button" >Upload</button>
+
+                <p class="text">Passport Size Photo</p>
+                <button type="submit" class="button" >Upload</button>
+
+                <p class="text">Salary Slip</p>
+                <button type="submit" class="button" >Upload</button> -->
+
+                <button type="submit" class="btn" >Submit</button> 
+                  <router-outlet></router-outlet>
+        </form>
+    </div>
+</div>

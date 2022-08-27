@@ -1,0 +1,83 @@
+<div class = "navpanel sticky" >
+    <a routerLink='/login' class='aboutus'>Log Out</a>
+    <a routerLink='/admindashboard:email'>Admin Dashboard</a>
+    <a routerLink='/allrejected' >Rejected List</a>
+    <a routerLink='/allapplications'>Applications list</a>
+    <a routerLink='/allclients'>Registered Clients</a>
+    <img style = "height: 65px; margin:2px 30px; vertical-align: middle;" src = "assets/images/car-loan.png">
+</div>
+
+
+
+<br>
+
+<!-- {{this.cust = res[0]}} -->
+
+<!-- HTML code for container -->
+
+<div class = "container">
+    <div style="margin-top: 100px; margin-bottom: 10px; color: #365040;"> 
+        <h1>-------Application Form--------</h1>
+        Application form ID <u><b>{{cust.application_id}}</b></u><br><br>
+        <b>User ID is : </b>
+        <p>{{cust.user_id}}</p><br>
+        <b>User Firstname is : </b>
+        <p>{{cust.user_firstname}}</p><br>
+        <b>User Lastname is : </b>
+        <p>{{cust.user_lastname}}</p><br>
+        <b>User ID is : </b>
+        <p>{{cust.user_id}}</p><br>
+        <b>User email is: </b>
+        <p>{{cust.user_email}}</p><br>
+        <b>Phone number is: </b>
+        <p>{{cust.user_phonenum}}</p><br>
+        <b>User dob is: </b>
+        <p>{{cust.user_dob}}</p><br>
+        <b>Gender is:</b>
+        <p>{{cust.user_gender}}</p><br>
+        <b>User address is:</b>
+        <p>{{cust.user_address}}</p><br>
+        <b>User City is:</b>
+        <p>{{cust.user_city}}</p><br>
+        <b>User State is:</b>
+        <p>{{cust.user_state}}</p><br>
+        <b>User Pincode is:</b>
+        <p>{{cust.user_pincode}}</p><br>
+        <b>Vehicle Make is:</b>
+        <p>{{cust.vehicle_make}}</p><br><br>
+        <b>Vehicle Model is:</b>
+        <p>{{cust.vehicle_model}}</p><br><br>
+        <b>Vehicle Type is:</b>
+        <p>{{cust.vehicle_type}}</p><br><br>
+        <b>Showroom price is:</b>
+        <p>{{cust.showroom_price}}</p><br><br>
+        <b>Road Price is:</b>
+        <p>{{cust.on_road_price}}</p><br><br>
+        <b>Type of Employment is:</b>
+        <p>{{cust.type_of_emp}}</p><br><br>
+        <b>Application Id is:</b>
+        <p>{{cust.application_id}}</p><br><br>
+        <b>Annual Salary is:</b>
+        <p>{{cust.annual_sal}}</p><br><br>
+        <b>Existing EMI is:</b>
+        <p>{{cust.existing_emi}}</p><br><br>
+        <b>Duration is:</b>
+        <p>{{cust.duration}}</p><br><br>
+        <b> Interest is:</b>
+        <p>{{cust.interest}}</p><br><br>
+        <b>Application Status is:</b>
+        <p>{{cust.application_date}}</p><br><br>
+        <b>Aadhar is:</b>
+        <p>{{cust.upload_aadhar}}</p><br><br>
+        <b>Pan is:</b>
+        <p>{{cust.upload_pan}}</p><br><br>
+        <b>Photo is:</b>
+        <p>{{cust.upload_photo}}</p><br><br>
+        <b>Salary Slip is:</b>
+        <p>{{cust.upload_salary_slip}}</p><br><br>
+        <b>Application Status is:</b>
+        <p>{{cust.application_status}}</p><br><br>
+        <b>Rejection reason is:</b>
+        <p>{{cust.rejection_reason}}</p><br><br>
+    </div>
+  </div>

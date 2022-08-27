@@ -1,0 +1,34 @@
+<div class = "navpanel sticky" >
+    <a routerLink='/login' class='aboutus'>Log Out</a>
+    <a routerLink='/checkeligiblity' class='checkeligibility'>Apply Loan</a>
+    <a routerLink='/emicalculator' class='EMIcalculator'>EMI Calculator</a>
+    <a routerLink='/userdashboard' class='home'>Home</a>
+    <img style = "height: 65px; margin:2px 30px; vertical-align: middle;" src = "assets/images/car-loan.png">
+  </div>
+
+  
+<br>
+
+
+<!-- {{this.cust = res[0]}} -->
+
+<!-- HTML code for myform status -->
+
+<div class = "container">
+    <div style="margin-top: 100px; margin-bottom: 10px; color: #365040;"> 
+      <h1>-------Application Form Status--------</h1>
+        Application form ID <u><b>{{cust.application_id}}</b></u><br><br>
+        <!-- <b>User ID is : </b>
+        <p>{{cust.user_ref_id}}</p><br> -->
+
+        <b>Application Id is:</b>
+        <p>{{cust.application_id}}</p><br><br>
+        <b>Status Id is:</b>
+        <p>{{cust.status_id}}</p><br><br>
+
+        <b>Application Status is:</b>
+        <p>{{cust.application_status}}</p><br><br>
+        <b>Rejection reason is:</b>
+        <p>{{cust.rejection_reason}}</p><br><br>
+    </div>
+  </div>

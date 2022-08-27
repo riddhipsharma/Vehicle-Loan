@@ -1,0 +1,56 @@
+<div class="navpanel sticky">
+    <a routerLink='/login' class='aboutus'>Log Out</a>
+    <a routerLink='/checkeligiblity' class='checkeligibility'>Apply Loan</a>
+    <a routerLink='/emicalculator' class='EMIcalculator'>EMI Calculator</a>
+    <a routerLink='/userdashboard' class='home'>Home</a>
+    <img style="height: 65px; margin:2px 30px; vertical-align: middle;" src="assets/images/car-loan.png">
+</div>
+
+<!-- HTML code for Loan offer page -->
+
+<div class="container">
+    <div class="row">
+        <br><br>
+        <h1 class = "text" style = "font-size: 35px;">APPLY FOR LOAN</h1>
+        <hr style = "width:100%"> 
+        <form #appform="ngForm" novalidate (ngSubmit)="onSubmit(appform.value)">
+            <label  for="LoanQuote">YOUR LOAN QUOTES</label><br><br>
+            <label style="color:red"  for="best_rate">BEST RATE-10</label><br>
+            <label style="color:red"  for="processing_fee">PROCESSING FEE-100</label><br>
+            <div class="form-group">
+                <pre></pre>
+                <input #user_ref_id="ngModel" type="number" name="user_ref_id" class="form-control"
+                  placeholder="User Reference Id" ngModel>
+              </div>
+
+            <div class="form-group">
+                <pre></pre>
+                <input #loan_amt="ngModel" type="number" name="loan_amt" class="form-control"
+                  placeholder="Loan Amount" ngModel>
+                  
+              </div>
+              <div class="form-group">
+                <pre></pre>
+                <select #account_type="ngModel" type="text" name="account_type" class="form-control"
+                  placeholder="Account Type" ngModel  >
+                  <option >Please select Account Type: </option>
+                  <option value="savings">Savings</option>
+                  <option value="salary">Salary</option>
+                </select><br>
+              </div>
+              <div class="form-group">
+                  <pre></pre>
+                  <select #product_type="ngModel" type="text" name="product_type" class="form-control"
+                    placeholder="Product Type" ngModel  >
+                    <option selected disabled hidden style='display: none' value='undefined'>Please select Product Type: </option>
+                      <option value="two-wheeler">two-wheeler</option>
+                      <option value="three-wheeler">three-wheeler</option>
+                      <option value="four-wheeler">four-wheeler</option>
+                  </select><br>
+              </div>
+
+            <button type="submit" class="btn" >Submit</button> 
+              <router-outlet></router-outlet>
+    </form>
+    </div>
+</div>

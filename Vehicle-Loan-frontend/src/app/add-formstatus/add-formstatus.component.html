@@ -1,0 +1,57 @@
+<!-- design for sticky navbar -->
+
+
+<div class="navpanel sticky">
+    <a routerLink='/login' class='aboutus'>Log Out</a>
+    <a routerLink='/admindashboard'>Admin Dashboard</a>
+    <a routerLink='/allrejected'>Rejected List</a>
+    <a routerLink='/allapplications'>Applications list</a>
+    <a routerLink='/allclients'>Registered Clients</a>
+    <img style="height: 65px; margin:2px 30px; vertical-align: middle;" src="assets/images/car-loan.png">
+</div>
+
+<!-- this is container which contains the code for getting the status of the applicant   -->
+
+<div class="container">
+    <div class="row">
+        <br><br>
+        <h1 class="heading" style="font-size: 25px;">Application Form</h1>
+        <hr style="width:100%">
+        <form #appform="ngForm"  novalidate (ngSubmit)="onSubmit(appform.value)">
+
+            <div class="form-group">
+                <pre></pre>
+                <input #user_ref_id="ngModel" type="number" name="user_ref_id" class="form-control"
+                    placeholder="User Reference Id" ngModel>
+            </div>
+
+            <div class="form-group">
+                <pre></pre>
+                <input #admin_ref_id="ngModel" type="number" name="admin_ref_id" class="form-control"
+                    placeholder="Admin Reference Id" ngModel>
+            </div>
+
+            <div class="form-group">
+                <pre></pre>
+                <input #application_ref_id="ngModel" type="number" name="application_id" class="form-control"
+                    placeholder="Application Reference Id" ngModel>
+            </div>
+
+            <div class="form-group">
+                <pre></pre>
+                <input #application_ref_id="ngModel" type="text" name="application_status" class="form-control"
+                    placeholder="Application Status" ngModel>
+            </div>
+            <div class="form-group">
+                <pre></pre>
+                <input #application_ref_id="ngModel" type="text" name="rejection_reason" class="form-control"
+                    placeholder="Rejection Reason" ngModel>
+            </div>
+
+            <br>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <router-outlet></router-outlet>
+        </form>
+    </div>
+</div>

@@ -5983,11 +5983,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Vehicle-Loan\\WebAPI\\WebAPI_fetch_from_DB\\WebAPI_fetch_from_DB.csproj",
+      "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\VLgit\\Vehicle-Loan\\WebAPI\\WebAPI_fetch_from_DB\\WebAPI_fetch_from_DB.csproj",
       "projectName": "WebAPI_fetch_from_DB",
-      "projectPath": "E:\\Vehicle-Loan\\WebAPI\\WebAPI_fetch_from_DB\\WebAPI_fetch_from_DB.csproj",
+      "projectPath": "C:\\Users\\ADMIN\\Desktop\\VLgit\\Vehicle-Loan\\WebAPI\\WebAPI_fetch_from_DB\\WebAPI_fetch_from_DB.csproj",
       "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "E:\\Vehicle-Loan\\WebAPI\\WebAPI_fetch_from_DB\\obj\\",
+      "outputPath": "C:\\Users\\ADMIN\\Desktop\\VLgit\\Vehicle-Loan\\WebAPI\\WebAPI_fetch_from_DB\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",

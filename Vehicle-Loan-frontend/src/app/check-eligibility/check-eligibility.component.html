@@ -1,0 +1,55 @@
+<div class = "navpanel sticky" >
+    <a routerLink='/login' class='aboutus'>Log Out</a>
+    <a routerLink='/checkeligiblity' class='checkeligibility'>Apply Loan</a>
+    <a routerLink='/emicalculator' class='EMIcalculator'>EMI Calculator</a>
+    <a routerLink='/userdashboard' class='home'>Home</a>
+    <img style = "height: 65px; margin:2px 30px; vertical-align: middle;" src = "assets/images/car-loan.png">
+  </div>
+
+
+
+<!-- container having HTML code for checking eligibility of user to apply loan -->
+
+<div class = "container">
+    <br>
+    <h1 class = "text" style = "font-size: 30px; text-align: center; font-weight: 600;">Check Loan Eligibility</h1>
+    <hr style="width: 100%;">
+    <p class = "text" style = "color: #0c86bf; font-size: 12px; text-align: center;">Enter your details to check your eligibility for the loan.<p><br> 
+    <form (ngSubmit)=checkeligiblity() ngNativeValidate>
+        <div class = "row">
+        <p class="text" style = "color: #0c86bf; font-weight:600; letter-spacing: 1px;"> Enter the Vehical Detail </p>
+        <input type = "text" style = "width: 43%;" placeholder = "Vehicle Make"/>
+        <input type = "text" style = "width: 43%; float:right;" placeholder="Vehicle Model"/> <br>
+        <input type = "text" style = "width: 43%;" placeholder = "Ex-Showroom Price"/>
+        <input type = "number" style = "width: 43%; float:right;" name="onroadprice" placeholder="On-Road Price" [(ngModel)]="onroadprice" required/> <br> <br>     
+        <hr style = "height: 2px; border: 0; background-color: rgb(214, 214, 214);"><br>
+        <p class="text" style = "color: #0c86bf; font-weight:600; letter-spacing: 1px;"> Enter the Applicant Detail </p>
+        <input type = "text" style = "width: 43%;" placeholder = "First Name"/>
+        <input type = "text" style = "width: 43%; float:right;" placeholder = "Last Name"/> <br>
+        <input type = "text" style = "width: 43%;" placeholder = "Age"/>
+        <input type = "text" style = "width: 43%; float:right;" placeholder = "Gender"/>
+        <input type = "text" style = "width: 43%;" placeholder = "Type of Employment"/>
+        <input type = "number" style = "width: 43%; float:right;" name="monthlysavings" placeholder = "Monthly Savings (Ex:- 10000)" [(ngModel)]="monthlysavings" required/>
+        <input type = "number" style = "width: 43%;" name="existingemi" placeholder = "Existing EMI" [(ngModel)]="existingemi" required/> 
+        <input type = "number" style = "width: 43%; float:right;" name="loantenure" placeholder = "Loan Tenure" [(ngModel)]="loantenure" required/><br> <br>
+
+        <hr style = "height: 2px; border: 0; background-color: rgb(214, 214, 214);">
+        <br>
+
+        <p class="text" style = "color: #0c86bf; font-weight:600; letter-spacing: 1px;"> Enter the Contact Detail </p>
+
+        <input type = "text" style = "width: 43%;" placeholder = "Mobile Number"/>
+        <input type = "text" style = "width: 43%; float:right;" placeholder = "Email"/> <br> <br> <br> 
+    
+        </div>
+    <button type="submit" class='btn login'>Check Eligiblity</button><br><br>
+    <p class = "text" style = "color: #0c86bf; font-size: 15px; font-weight:600; text-align: center; letter-spacing: 2px;"> {{stat}} </p> <br> 
+    <a routerLink='/userdashboard' class='app-form'>Back</a>  
+    </form>
+</div>
+
+<footer class="footer">
+    <br>
+    <p>© AutoLoans 2022. All Rights Reserved.<br>
+        <a>Project Gladiator (Larsen & Toubro Infotech Limited)</a></p><br>
+</footer>

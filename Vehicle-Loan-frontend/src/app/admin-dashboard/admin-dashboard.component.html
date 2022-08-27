@@ -1,0 +1,35 @@
+<div class = "navpanel sticky" >
+    <a routerLink='/login' class='aboutus'>Log Out</a>
+    <a routerLink='/admindashboard'>Admin Dashboard</a>
+    <a routerLink='/allrejected' >Rejected List</a>
+    <a routerLink='/allapplications'>Applications list</a>
+    <a routerLink='/allclients'>Registered Clients</a>
+    <img style = "height: 65px; margin:2px 30px; vertical-align: middle;" src = "assets/images/car-loan.png">
+</div>
+
+<!-- code for displaying information of admin -->
+
+<br>
+<br />
+
+<div class="container">
+    <div class = "row">
+        <h1>-------Welcome to Admin Dashboard--------</h1>
+        <br><br><br>
+        <table class='table  table-bordered table-hover' >  
+            <thead class="thead-dark">  
+          <tr>  
+              <th scope="col">ID</th>   
+              <th scope="col">Email</th>  
+          </tr>  
+      </thead>  
+      <tbody>  
+          <tr *ngFor="let a of ad">   
+              <td>{{a.admin_id}}</td>
+              <td>{{a.admin_email}}</td>   
+          </tr>  
+      </tbody>  
+  </table> 
+</div>
+</div>
+  

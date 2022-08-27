@@ -1,0 +1,40 @@
+.navpanel{
+    overflow: hidden;
+    background-color: #0c86bf;
+    width: 100%;
+    margin-left: auto;
+    height: 70px;
+}
+
+.navpanel a{
+float: right;
+color: white;
+display: block;
+font-family: Verdana, sans-serif;
+text-align: center;
+padding: 26px 26px;
+text-decoration: none;
+}
+
+.navpanel a:hover {
+background-color:#0c86bf ;
+
+}
+
+.container {
+    position: relative;
+    background-color: #f2f2f2;
+    padding: 60px 0 60px 0;
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 150px;
+  } 
+
+  .row {
+    flex: 100%;
+    padding: 0 100px;
+    margin-top: 6px;
+    text-align: left;
+  }

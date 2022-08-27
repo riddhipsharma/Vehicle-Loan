@@ -1,0 +1,22 @@
+.navpanel{
+    overflow: hidden;
+    background-color: #0c86bf;
+    width: 100%;
+    margin-left: auto;
+    height: 70px;
+}
+
+.navpanel a{
+float: right;
+color: white;
+display: block;
+font-family: Verdana, sans-serif;
+text-align: center;
+padding: 26px 26px;
+text-decoration: none;
+}
+
+.navpanel a:hover {
+background-color:#0c86bf ;
+
+}

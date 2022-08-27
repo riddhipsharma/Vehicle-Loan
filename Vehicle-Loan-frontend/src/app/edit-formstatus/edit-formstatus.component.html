@@ -1,0 +1,68 @@
+<div class="navpanel sticky">
+    <a routerLink='/login' class='aboutus'>Log Out</a>
+    <a routerLink='/admindashboard'>Admin Dashboard</a>
+    <a routerLink='/allrejected'>Rejected List</a>
+    <a routerLink='/allapplications'>Applications list</a>
+    <a routerLink='/allclients'>Registered Clients</a>
+    <img style="height: 65px; margin:2px 30px; vertical-align: middle;" src="assets/images/car-loan.png">
+</div>
+
+<!--code for editing the information of the application status form-->
+
+<br>
+<br>
+<br>
+<form>
+    <!-- <h1>Update Application Status</h1> -->
+    <pre></pre>
+    <div class="form-group">
+        <label for="id">Status Id</label>
+        <input type="number" #id="ngModel" readonly name="status_id" class="form-control" [(ngModel)]="user.status_id">
+    </div>
+
+    <div class="form-group">
+        <label for="id">User Id</label>
+        <input type="number" #id="ngModel" readonly name="user_ref_id" class="form-control"
+            [(ngModel)]="user.user_ref_id">
+
+    </div>
+    <div class="form-group">
+        <label for="id">Admin Id</label>
+        <input type="number" #id="ngModel" readonly name="admin_ref_id" class="form-control"
+            [(ngModel)]="user.admin_ref_id">
+
+    </div>
+    <div class="form-group">
+        <label for="id">Application Id</label>
+        <input type="number" #id="ngModel" readonly name="application_id" class="form-control"
+            [(ngModel)]="user.application_id">
+
+    </div>
+    <div class="form-group">
+        <label for="Application_Status">Application Status</label><br>
+        <input #Application_Status="ngModel" readonly required minlength="2" maxlength="14" type="text"
+            name="application_status" class="form-control" placeholder="Enter Status"
+            [(ngModel)]="user.application_status">
+        <div *ngIf="Application_Status.touched && Application_Status.invalid" class="alert alert-danger">
+            <p *ngIf="Application_Status.hasError('required')">Application Status is required</p>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="Rejection_Reason">Rejection Reason</label><br>
+        <input #Rejection_Reason="ngModel" readonly required minlength="2" maxlength="400" type="text"
+            name="rejection_reason" class="form-control" placeholder="Enter rejection reason"
+            [(ngModel)]="user.rejection_reason">
+        <div *ngIf="Rejection_Reason.touched && Rejection_Reason.invalid" class="alert alert-danger">
+            <p *ngIf="Rejection_Reason.hasError('required')">Name is required</p>
+        </div>
+    </div>
+
+    <pre></pre>
+    <!-- <button type="submit" class="btn btn-primary">Ok</button> -->
+    <!-- <input type="submit" value="submit"> -->
+    <!-- <div class="alert">
+        <span class="closebtn">&times;</span>
+        <strong>Verified!</strong>
+    </div> -->
+    <router-outlet></router-outlet>
+</form>
